@@ -1,0 +1,29 @@
+.form {
+  margin: 20px 0;
+
+  ::placeholder {
+    color: #979797;
+    font-weight: 600;
+  }
+
+  .background-white {
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+
+  .input-svg {
+    position: relative;
+    margin-bottom: 16px;
+
+    svg {
+      width: 23px;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      translate: 0 -50%;
+      color: #979797;
+    }
+  }
+}
+
+@import "../button.scss";

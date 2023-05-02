@@ -1,0 +1,48 @@
+.card-horizontal {
+  width: 494px;
+  height: 100px;
+  margin: 1rem;
+  display: flex;
+
+  &:hover &-info,
+  &-img {
+    background-color: #414141;
+    cursor: pointer;
+  }
+
+  &-img {
+    width: 100px;
+    height: 100px;
+    background-color: #bcbcbc;
+    border-radius: 4px 0 0 4px;
+  }
+
+  &-info {
+    width: 394px;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      flex: 1;
+    }
+
+    &:focus-within {
+      background-color: #414141;
+
+      a:focus-visible {
+        text-decoration: underline 2px;
+        //line-height: 50px; //Not working
+      }
+    }
+  }
+}
+
+@import "../playButton.scss";
+@import "../button.scss";
+@import "cardProgress.scss";
+@import "cardSubtitle.scss";

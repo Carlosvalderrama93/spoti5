@@ -1,0 +1,45 @@
+.play-button-x {
+  display: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #1ed760;
+  border: none;
+  box-shadow: 0 10px #2a2a2a; //Must be improve
+
+  &:hover {
+    display: flex;
+    scale: 105%;
+  }
+
+  svg {
+    height: 26px;
+    margin: auto;
+  }
+}
+
+.play {
+  //Revisar en Figma tamaño del Button
+  width: 60px;
+  height: 60px;
+  button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 0;
+    background-color: #1ed760;
+    border: none;
+
+    svg {
+      height: 27px;
+      width: 27px;
+      margin: auto;
+    }
+
+    &:hover {
+      transform: scale(104%);
+    }
+  }
+}

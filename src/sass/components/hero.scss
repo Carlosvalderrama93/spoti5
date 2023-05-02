@@ -1,0 +1,14 @@
+.hero {
+  &-songs {
+    background: linear-gradient(#4f379f, #2a1e52);
+  }
+
+  &-episodes {
+    background: linear-gradient(#046551, #03352a);
+  }
+
+  &-icon {
+    width: 236px;
+    height: 236px;
+  }
+}

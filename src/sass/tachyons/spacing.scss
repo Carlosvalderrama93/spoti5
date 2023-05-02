@@ -1,0 +1,57 @@
+$spaces: (
+  "none": 0,
+  "nano": 1px,
+  "micro": 2px,
+  "xs": 4px,
+  "s": 6px,
+
+  "base": 8px,
+
+  "l": 12px,
+  "xl": 16px,
+  "xxl": 24px,
+  "big": 32px,
+  "huge": 48px,
+  "large": 72px,
+);
+
+$sides: a, x, y, t, r, b, l;
+
+:root {
+  @each $type, $space in $spaces {
+    // variables CSS created here
+    --space-#{$type}: #{$space};
+  }
+}
+
+.p {
+  @each $side in $sides {
+    &#{$side} {
+      @each $type, $space in $spaces {
+        &-#{$type} {
+          @if $side == "a" {
+            padding: var(--space-#{$type});
+          }
+          @if $side == "x" {
+            padding: 0px var(--space-#{$type});
+          }
+          @if $side == "y" {
+            padding: var(--space-#{$type}) 0;
+          }
+          @if $side == "t" {
+            padding-top: var(--space-#{$type});
+          }
+          @if $side == "r" {
+            padding-right: var(--space-#{$type});
+          }
+          @if $side == "b" {
+            padding-bottom: var(--space-#{$type});
+          }
+          @if $side == "l" {
+            padding-left: var(--space-#{$type});
+          }
+        }
+      }
+    }
+  }
+}

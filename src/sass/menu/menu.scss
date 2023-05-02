@@ -1,0 +1,19 @@
+.menu {
+  overflow: auto;
+  width: 250px;
+  height: 100%;
+  box-sizing: border-box;
+
+  &-logo {
+    a {
+      color: white;
+    }
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+}
+
+@import "menuIcon.scss";
+@import "menuItem.scss";

@@ -1,0 +1,80 @@
+.df,
+.f,
+.flex {
+  display: flex;
+
+  &-fd-c,
+  &-c,
+  &-column {
+    flex-direction: column;
+  }
+
+  &-row {
+    flex-direction: row;
+  }
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.jc {
+  &-c {
+    justify-content: center;
+  }
+
+  &-sa {
+    justify-content: space-around;
+  }
+
+  &-sb {
+    justify-content: space-between;
+  }
+
+  &-se {
+    justify-content: space-evenly;
+  }
+
+  &-e {
+    justify-content: end;
+  }
+}
+
+.as,
+.self-start {
+  align-self: flex-start;
+}
+
+.items {
+  &-start {
+    align-items: start;
+  }
+
+  &-center {
+    align-items: center;
+  }
+}
+
+.ai {
+  &-c {
+    align-items: center;
+  }
+
+  &-sa {
+    align-items: space-around;
+  }
+
+  &-sb {
+    align-items: space-between;
+  }
+
+  &-se {
+    align-items: space-evenly;
+  }
+}
+
+.ta {
+  &-e {
+    text-align: end;
+  }
+}

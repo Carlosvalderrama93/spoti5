@@ -1,0 +1,30 @@
+.menu-icon {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+
+  &.menu-icon-background {
+    transition: 0.2s linear;
+
+    &.grey {
+      background-color: #b3b3b3;
+      color: black;
+    }
+
+    &.blue {
+      background: linear-gradient(135deg, #2f0d9c, #829d95);
+      color: #b3b3b3;
+    }
+
+    &.green {
+      color: #159643;
+      background-color: #004638;
+    }
+  }
+  svg {
+    fill: currentColor;
+  }
+}

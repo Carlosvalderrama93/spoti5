@@ -1,0 +1,25 @@
+.title {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+
+  &.title-1 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &.title-2 {
+    font-size: 13px;
+    font-weight: 700;
+
+    & a:hover {
+      color: white;
+    }
+  }
+}

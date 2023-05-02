@@ -1,0 +1,42 @@
+button {
+  border: solid var(--color-white) 1px;
+  color: var(--color-white);
+  height: 48px;
+  width: 100%;
+  border-radius: 25px;
+  background-color: black;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0 17px;
+
+  &:hover {
+    scale: 102%;
+  }
+
+  &.background-white {
+    background-color: white;
+    color: black;
+
+    &:hover {
+      scale: 106%;
+      font-size: 14px;
+    }
+  }
+
+  &.padding-left {
+    padding-left: 47px;
+  }
+  &.padding-right {
+    padding-right: 47px;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  svg {
+    height: 35px;
+    fill: #57dc6c;
+  }
+}

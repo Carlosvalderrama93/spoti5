@@ -1,0 +1,23 @@
+:root {
+  --fg-default: rgb(36, 41, 68);
+  --fg-muted: rbg();
+  --fg-subtle: rgb();
+  --fg-on-emphasis: rgb();
+
+  --header-xl-margin: 3rem;
+  --header-l-margin: 2rem;
+
+  --header-margin: 0.95rem;
+
+  --header-m-margin: 0.75rem;
+
+  --header-s-margin: 0.5rem;
+  --header-xs-margin: 0.25rem;
+}
+
+.button-color {
+  color: var(--fg-default);
+}
+
+.green-button-color {
+}

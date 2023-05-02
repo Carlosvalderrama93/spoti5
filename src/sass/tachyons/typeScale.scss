@@ -1,0 +1,42 @@
+$type-sizes: (
+  "xs": 11px,
+  "s": 14px,
+
+  "base": 16px,
+
+  "l": 20px,
+  "xl": 24px,
+  "big": 32px,
+  "huge": 48px,
+  "large": 72px,
+  "larger": 96px,
+);
+
+:root {
+  @each $type, $size in $type-sizes {
+    // acá se crean las variables CSS
+    --type-size-#{$type}: #{$size};
+  }
+}
+
+// "fs-b"
+.fs {
+  @each $type, $size in $type-sizes {
+    // Acá se crean los estilos
+    &-#{$type} {
+      font-size: var(--type-size-#{$type});
+    }
+  }
+}
+
+// .fs {
+//   @each $size in $sizes {
+//     --size-#{$size}: $size;
+//   }
+
+//   @each $size in $sizes {
+//     &-#{$size} {
+//       font-size: $size;
+//     }
+//   }
+// }

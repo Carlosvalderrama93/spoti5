@@ -1,0 +1,36 @@
+.browser {
+  background-color: #121212;
+  height: 100vh;
+  display: 1;
+  flex-direction: column;
+
+  .top {
+    display: flex;
+    height: calc(100% - 100px);
+
+    .menu {
+      min-width: 200px;
+      height: 100%;
+    }
+
+    .home {
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    >section {
+      flex: 1;
+    }
+  }
+
+  .bottom {
+    background: dodgerblue;
+    height: 100px;
+  }
+}
+
+@import "cards/cardProgress.scss";
+@import "cards/cardSubtitle.scss";
+@import "cards/cardHorizontal.scss";
+@import "cards/cardSquare.scss";
+@import "button.scss";

@@ -1,0 +1,35 @@
+.square-card {
+  width: 232px;
+  height: 330px;
+  border-radius: 8px;
+  background-color: #181818;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: #414141;
+    .square-card-cover-button {
+      display: flex;
+    }
+  }
+
+  &-cover {
+    width: 192px;
+    height: 192px;
+    background-color: #bcbcbc;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+
+    &-button {
+      display: none;
+    }
+  }
+}
+
+@import "../playButton.scss";
+@import "../button.scss";
+@import "cardProgress.scss";
+@import "cardSubtitle.scss";
